@@ -2,8 +2,12 @@
 #!desc=ziyong
 #!system=ios
 
-# > 作业帮
+[Rule]
+AND,((PROTOCOL,UDP),(DEST-PORT,443)),REJECT-NO-DROP
+
+
 [URL Rewrite]
+# > 作业帮
 ^https?:\/\/img\.zuoyebang\.cc\/zyb-image[\s\S]*?\.jpg url reject-img
 ^https?:\/\/syh\.zybang\.com\/com\/adx\/ url reject
 ^https?:\/\/www\.zybang\.com\/adx\/ url reject
@@ -12,7 +16,14 @@ https://mall.zuoyebang.com/mall/goods/audio/voice/list?audioId=\d+ url script-re
 https://apivip.zybang.com/vipols/vip/viphomev1?.+ url script-response-body https://raw.githubusercontent.com/28413761/QX/main/jiesuo/zuoyebang.js
 # > 威风
 ^https:\/\/api\.wfdata\.club\/v2\/yesfeng\/(infoCenterAd|yesList) - reject
+# > Youtube
+(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 header
+^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break - reject
+^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject
+^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject
+^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject
 
 
 [MITM]
-hostname = %APPEND% mall.zuoyebang.com,syh.zybang.com,apivip.zybang.com,api.wfdata.club,
+hostname = %APPEND% mall.zuoyebang.com,syh.zybang.com,apivip.zybang.com,api.wfdata.club,-redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com，
