@@ -26,4 +26,4 @@ https://apivip.zybang.com/vipols/vip/viphomev1?.+ url script-response-body https
 
 
 [MITM]
-hostname = %APPEND% mall.zuoyebang.com,syh.zybang.com,apivip.zybang.com,api.wfdata.club,-redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com,upload-cdn.orayimg.com,slapi.oray.net,
+hostname = %APPEND% mall.zuoyebang.com,syh.zybang.com,apivip.zybang.com,api.wfdata.club,upload-cdn.orayimg.com,slapi.oray.net,
