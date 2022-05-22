@@ -1,0 +1,7 @@
+#!name=weifeng iOS Script Module
+#!desc=weifeng
+#!system=ios
+[Script]
+http-request ^https:\/\/api\.wfdata\.club\/v2\/yesfeng\/(infoCenterAd|yesList) url reject
+[MITM]
+hostname = %APPEND% api.wfdata.club,
