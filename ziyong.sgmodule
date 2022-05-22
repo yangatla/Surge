@@ -13,13 +13,7 @@ https://mall.zuoyebang.com/mall/goods/audio/voice/list?audioId=\d+ url script-re
 https://apivip.zybang.com/vipols/vip/viphomev1?.+ url script-response-body https://raw.githubusercontent.com/28413761/QX/main/jiesuo/zuoyebang.js
 # > 威风
 ^https:\/\/api\.wfdata\.club\/v2\/yesfeng\/(infoCenterAd|yesList) - reject
-# > Youtube(video)
-(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 header
-^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break - reject
-^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject
-^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject
-^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject
+
 
 
 
