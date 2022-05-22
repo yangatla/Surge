@@ -1,15 +1,15 @@
-#!name=自用模块
-#!desc=自用模块
-#!system=io
+#!name=wo
+#!desc=wo
+#!system=ios
 
 [MITM]
 hostname = %APPEND% mall.zuoyebang.com,syh.zybang.com,apivip.zybang.com,api.wfdata.club,
 
 
 
-
-# > 作业帮
 [URL Rewrite]
+# > 作业帮
+
 ^https?:\/\/img\.zuoyebang\.cc\/zyb-image[\s\S]*?\.jpg url reject-img
 ^https?:\/\/syh\.zybang\.com\/com\/adx\/ url reject
 ^https?:\/\/www\.zybang\.com\/adx\/ url reject
