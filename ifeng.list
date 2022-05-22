@@ -1,0 +1,18 @@
+## /*  APP开屏广告拦截，APP启动广告拦截！
+##  a28413761  收集整理
+## 更新时间  2022.05.20
+## */  
+
+
+# > 威锋
+DOMAIN-KEYWORD, p3-be-pack-sign.pglstatp-toutiao.com
+DOMAIN-KEYWORD, sf3-be-pack.pglstatp-toutiao.com
+DOMAIN-KEYWORD,sf1-be-pack.pglstatp-toutiao.com
+DOMAIN-KEYWORD,sf1-fe-tos.pglstatp-toutiao.com
+DOMAIN-KEYWORD,sf1-ttcdn-tos.pstatp.com
+DOMAIN-KEYWORD,sf3-fe-tos.pglstatp-toutiao.com
+DOMAIN-KEYWORD,sf3-ttcdn-tos.pstatp.com
+DOMAIN-KEYWORD,sf6-fe-tos.pglstatp-toutiao.com
+DOMAIN-KEYWORD,s3-fe-scm.pglstatp-toutiao.com
+DOMAIN-KEYWORD,sf6-be-pack.pglstatp-toutiao.com
+DOMAIN-KEYWORD,p9-be-pack-sign.pglstatp-toutiao.com
