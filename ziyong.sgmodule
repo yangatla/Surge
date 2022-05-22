@@ -14,6 +14,13 @@ https://apivip.zybang.com/vipols/vip/viphomev1?.+ url script-response-body https
 # > 威风
 ^https:\/\/api\.wfdata\.club\/v2\/yesfeng\/(infoCenterAd|yesList) - reject
 
+# > 向日葵
+^https?:\/\/upload-cdn\.orayimg\.com\/upload\/activity\/2203\/202203141933143453\.png url reject
+^https?:\/\/slapi\.oray\.net\/client\/ad url reject
+^https?:\/\/slapi\.oray\.net\/adver url reject
+^https?+:\/\/slapi\.oray\.net\/client\/ad url reject-200
+^https?:\/\/slapi.oray.net/client/ad url reject
+
 
 
 
