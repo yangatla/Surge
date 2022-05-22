@@ -10,6 +10,11 @@ RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/s
 
 
 [URL Rewrite]
+#悟空遥控
+# > 悟空
+^https?:\/\/img\.wukongtv\.com\/wkremote\/AD\/iOS\/.*.png url reject-200
+^https?:\/\/img\.wukongtv\.com\/wkremote\/AD\/iOS\/.*.jpg url reject-200
+^https?:\/\/img\.wukongtv\.com\/wkremote\/AD\/iOS\/.*.jpeg url reject-200
 # > 作业帮
 ^https?:\/\/img\.zuoyebang\.cc\/zyb-image[\s\S]*?\.jpg url reject-img
 ^https?:\/\/syh\.zybang\.com\/com\/adx\/ url reject
