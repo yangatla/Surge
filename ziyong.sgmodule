@@ -1,0 +1,14 @@
+#!name=ziyong
+#!desc=ziyong
+#!system=ios
+
+# > 作业帮
+[URL Rewrite]
+^https?:\/\/img\.zuoyebang\.cc\/zyb-image[\s\S]*?\.jpg url reject-img
+^https?:\/\/syh\.zybang\.com\/com\/adx\/ url reject
+^https?:\/\/www\.zybang\.com\/adx\/ url reject
+^https?+:\/\/www\.zybang\.com\/adx\/ url reject-200
+https://mall.zuoyebang.com/mall/goods/audio/voice/list?audioId=\d+ url script-response-body https://raw.githubusercontent.com/28413761/QX/main/jiesuo/zuoyebang.js
+https://apivip.zybang.com/vipols/vip/viphomev1?.+ url script-response-body https://raw.githubusercontent.com/28413761/QX/main/jiesuo/zuoyebang.js
+[MITM]
+hostname = %APPEND% mall.zuoyebang.com,syh.zybang.com,apivip.zybang.com,
