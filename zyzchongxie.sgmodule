@@ -15,9 +15,6 @@ hostname = %APPEND% m.jd.com, www.zhihu.com, zhuanlan.zhihu.com, www.baidu.com, 
 # > ^https?+:\/\/(tysdk|ads)\.95516\.com url reject-dict
 # > ads.95516.com和tysdk.95516.com这两个域名都拦截
 
-[Rule]
-AND,((PROTOCOL,UDP),(DEST-PORT,443)),REJECT-NO-DROP
-
 [URL Rewrite]
 # > 兴业银行（首页会有一小部分图片误杀）
 ^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.(jpg|png)\?ver=20220[4-9]{1} url reject-200
@@ -1163,13 +1160,16 @@ https://api.m.jd.com/client.action\?functionId=lite_advertising url reject
 ^https?:\/\/.+\.googlevideo\.com\/videogoodput url reject-img
 ^https?:\/\/(www\.bing)(\.\w{2,4}){1,2}\/(search\?.*|\?sa=|\?FORM)(?!.*?(apps=)).* url script-response-body https://raw.githubusercontent.com/28413761/QX/main/JS/surge_contentFarm.js
 # > 油管
-(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 header
-^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject
+ctier=[A-Z] url 302 ctier=A
+^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) url reject-200
 
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break - reject
-^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject
-^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject
-^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject
+(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) url 302 $1$2$3
+^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad url reject
+
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break url reject
+^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads url reject
+^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) url reject
+^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext url reject
 # > 58
 ^https?:\/\/\w+\.58cdn\.com\.cn\/brandads\/ url reject
 ^https?:\/\/.+\.58cdn\.com\.cn\/brandads\/ url reject
