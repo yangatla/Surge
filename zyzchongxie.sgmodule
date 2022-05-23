@@ -269,7 +269,7 @@ http:\/\/analytics\.163\.com\/ntes - reject
 ^https?:\/\/(api.*\.amemv|aweme\.snssdk)\.com\/api\/ad\/ - reject
 ^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/aweme\/stats\/ - reject-img
 ^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/device\/update\/ - reject-img
-^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/screen\/ad\/ - reject-img
+^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/screen\/ad\/ - reject-img 
 ^https?:\/\/aweme\.snssdk\.com\/service\/1\/app_logout\/ - reject-img
 ^https?:\/\/aweme\.snssdk\.com\/service\/2\/app_log - reject-img
 # > 百度地图
