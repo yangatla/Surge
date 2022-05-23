@@ -18,7 +18,7 @@ hostname = %APPEND% m.jd.com, www.zhihu.com, zhuanlan.zhihu.com, www.baidu.com, 
 # > ^https?+:\/\/(tysdk|ads)\.95516\.com - reject-dict
 # > ads.95516.com和tysdk.95516.com这两个域名都拦截
 
-[- Rewrite]
+[URL Rewrite]
 # > 兴业银行（首页会有一小部分图片误杀）
 ^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.(jpg|png)\?ver=20220[4-9]{1} - reject-200
 # > [a-zA-Z0-9]{32} 匹配32位的数字和大小写字母混合  [4-9]{1} 匹配4到9之间的其中一个数字
