@@ -1,0 +1,5 @@
+#!name=功能解锁
+#!desc=功能解锁
+[Script]
+# > 酷我音乐解锁SV
+^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice) - script-response-body https://raw.githubusercontent.com/28413761/QX/main/jiaoben/Kuwo.js
