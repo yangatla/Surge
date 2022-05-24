@@ -1,4 +1,4 @@
-var list = ["中国","广东","湛江","中山","珠海","深圳","广州"];
+var list = ["中国","福建","湛江","中山","珠海","深圳","广州"];
 const url = "https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5";
 变量 ala="";
 功能现在时间（）{
