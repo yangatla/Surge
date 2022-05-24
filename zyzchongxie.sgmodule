@@ -1801,8 +1801,6 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^http:\/\/www\.google\.cn url 302 https://www.google.com
 ^https?://(www.)?g.cn url 302 https://www.google.com
 ^(http|https):\/\/(www.)?bingd1ianhuanyuan\.cn\/ url 302 https://www.faronics.com/zh-hans/products/deep-freeze
-^https?://(www.)?google.cn url 302 https://www.google.com
-^https?://(www.)?google.cn/search url 302 https://www.google.com/search
 ^https?:\/\/(www.)?mi\.com\/ url 302 https://www.mi.com/
 ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?uid\=\d+ url 302 http://musicpay.kuwo.cn/music.pay?uid=1
 ^(http|https):\/\/(www.)?(bett2erzipcn|betterzip)\.(com|net)\/ url 302 $1https://macitbetter.com/$3
