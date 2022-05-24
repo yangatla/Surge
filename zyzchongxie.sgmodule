@@ -1889,3 +1889,4 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^https?:\/\/(www.)?photozoomchina\.com\/ url 302 https://www.benvista.com/
 ^https?:\/\/(www.)?shankejingling\.com\/ url 302 https://www.sothink.com/product/flashdecompiler/
 ^https?:\/\/(www.)?vegaschina\.cn\/ url 302 https://www.vegascreativesoftware.com/
+
