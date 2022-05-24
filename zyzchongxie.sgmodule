@@ -3,9 +3,7 @@
 
 # >  /*  APP开屏广告拦截，APP启动广告拦截，重定向！
 # >  */ 
-[Rule]
-#油管
-AND,((PROTOCOL,UDP),(DEST-PORT,443)),REJECT-NO-DROP
+
 
 
 [MITM] 
