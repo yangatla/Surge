@@ -1069,10 +1069,7 @@ https://api.m.jd.com/client.action\?functionId=lite_advertising - reject
 ^https?:\/\/.+\.googlevideo\.com\/videogoodput - reject-img
 ^https?:\/\/(www\.bing)(\.\w{2,4}){1,2}\/(search\?.*|\?sa=|\?FORM)(?!.*?(apps=)).* - script-response-body https://raw.githubusercontent.com/28413761/QX/main/JS/surge_contentFarm.js
 # > 油管
-ctier=[A-Z] - 302 ctier=A
-^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) - reject-200
-
-(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) - 302 $1$2$3
+(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 header
 ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject
 
 ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break - reject
