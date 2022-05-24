@@ -37,8 +37,8 @@ hostname = %APPEND% slapi.oray.net,m.jd.com, upload-cdn.orayimg.com,www.zhihu.co
 # > 阳光惠生活
 ^https?:\/\/yghsh\.cebbank\.com\/static\/picture\/.*.jpg url reject-200
 # > 中国银行
-^https?+:\/\/mlife\.jf365\.boc\.cn\/AppPrj\/FirstPic\.do\? - reject-200
-^https:\/\/mbs.boc.cn\/ubas-mgateway-static\/images\/advertType\/ - reject-200
+^https?+:\/\/mlife\.jf365\.boc\.cn\/AppPrj\/FirstPic\.do\? - reject
+^https:\/\/mbs.boc.cn\/ubas-mgateway-static\/images\/advertType\/ - reject
 # > 缤纷生活
 ^https?:\/\/mlife\.jf365\.boc\.cn\/mlife\/mobilelife\/uploadfile\/IosPict1\/.*.png url reject-200
 # > 邮储银行，添加主机名后影响APP正常运行
@@ -1889,4 +1889,3 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^https?:\/\/(www.)?photozoomchina\.com\/ url 302 https://www.benvista.com/
 ^https?:\/\/(www.)?shankejingling\.com\/ url 302 https://www.sothink.com/product/flashdecompiler/
 ^https?:\/\/(www.)?vegaschina\.cn\/ url 302 https://www.vegascreativesoftware.com/
-
