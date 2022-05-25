@@ -1,4 +1,4 @@
-#!name=功能解锁(zyz-20220523)
+#!name=功能解锁(zyz-20220525)
 #!desc=功能解锁
 [Script]
 
@@ -113,7 +113,7 @@ hyperweb = type=http-response,pattern=^https://zy6kcqa01a.execute-api.us-east-2.
 # > 067 B612咔叽 (2022-01-25) by ddgksf2013
 B612咔叽 = type=http-response,pattern=https://user-kaji-api.b612kaji.com/v1/purchase/subscription/subscriber/status,requires-body=1,script-path=https://raw.githubusercontent.com/28413761/QX/main/jiesuo/612.js,script-update-interval=0,max-size=0
 # > 066 酷我音乐解除下载权限 (2022-01-25) by ddgksf2013
-酷我音乐解除下载权限 = type=http-response,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver=\d url script-request-body https://raw.githubusercontent.com/28413761/QX/main/jiesuo/kuwodl.js,script-update-interval=0,max-size=0
+酷我音乐解除下载权限 = type=http-response,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver=\d,requires-body=1,script-path=https://raw.githubusercontent.com/28413761/QX/main/jiesuo/kuwodl.js,script-update-interval=0,max-size=0
 # > 065 通话录音（2021-06-25）by ddgksf2013
 通话录音 = type=http-response,pattern=http://micro-tool-api.lyaway.com/*,requires-body=1,script-path=https://raw.githubusercontent.com/28413761/QX/main/jiesuo/thly.js,script-update-interval=0,max-size=0
 # > 063 Photomath （2021-06-02） by ddgksf2013
