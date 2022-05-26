@@ -24,7 +24,7 @@
 # > 网易蜗牛读书解锁特权
 网易蜗牛读书解锁特权 = type=http-response,pattern=^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.js,script-update-interval=0,max-size=0on,requires-body=1,script-path=https://raw.githubusercontent.com/28413761/QX/main/JS/wnyd.js,script-update-interval=0,max-size=0
 # > 解锁一木记账V
-解锁一木记账V = type=http-response,pattern=^https?:\/\/yimuapp\.com(:8082)?\/bookkeeping\/user\/getUser\/,requires-body=1,script-path=https://raw.githubusercontent.com/28413761/QX/main/JS/YiMuJiZhang.js,script-update-interval=0,max-size=0
+解锁一木记账V = type=http-request,pattern=^https?:\/\/yimuapp\.com(:8082)?\/bookkeeping\/user\/getUser\/,requires-body=1,script-path=https://raw.githubusercontent.com/28413761/QX/main/JS/YiMuJiZhang.js,script-update-interval=0,max-size=0
 # > 海豚记账
 海豚记账 = type=http-response,pattern=https:\/\/book\.haitunwallet\.com\/app\/vip\/status,requires-body=1,script-path=https://raw.githubusercontent.com/28413761/QX/main/jiesuo/HTJZ.js,script-update-interval=0,max-size=0
 # > 解锁闪电下载无限时长V
