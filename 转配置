@@ -7,6 +7,8 @@ QX
 Surege
 # ～ KWYY_酷我解鎖無損下載（先選聽無損，再下載無損）@ddgksf2013
 酷我音乐解锁SV = type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),requires-body=1,script-path=https://raw.githubusercontent.com/28413761/QX/main/jiaoben/Kuwo.js,script-update-interval=0,max-size=0
+http-response ^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),requires-body=1,script-path=https://raw.githubusercontent.com/28413761/QX/main/jiaoben/Kuwo.js,script-update-interval=0,max-size=0
+
 3.例子
 QX
 # ～ Nicegram解鎖會員權限（2022-04-10）@ddgksf2013
