@@ -7,8 +7,6 @@ hostname = api.polaxiong.com
 [Script]
 
 # > 解锁
-#解锁Nicegram
-Nicegram = type=http-response,argument=text/json,pattern="https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\d{5,10}",requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/nicegram_body.js,script-update-interval=0
 #解锁泼辣修图
 ^https:\/\/api\.polaxiong\.com\/v1\/payments\/appleiap\/receipts\/confirmation requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Polarr.js
 # > 欲漫涩解锁V漫画
