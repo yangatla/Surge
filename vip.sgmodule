@@ -1,5 +1,5 @@
 #!name=VIP功能解锁(zyz-20220529)
-#!desc=VIO功能解锁
+#!desc=VIP功能解锁
 
 [MITM]
 hostname = api.polaxiong.com
