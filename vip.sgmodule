@@ -45,3 +45,5 @@ ToonMe = type=http-response,pattern=https://purchases.ws.pho.to/api/v2/apple/*,r
 西窗烛 = type=http-response,pattern=https://lchttpapi.xczim.com/*,requires-body=1,script-path=https://raw.githubusercontent.com/28413761/QX/main/ jiesuo/xcz.js,script-update-interval=0,max-size=0
 # > 058 Vizmato（2021-05-12） by ddgksf2013
 Vizmato = type=http-response,pattern=https://web.vizmato.com/itunesreceipt_v5.php,requires-body=1,script-path=https://raw.githubusercontent.com/28413761/QX/main/ jiesuo/vm.js,script-update-interval=0,max-size=0
+# > 088 Symbolab 解锁订阅（2022-03-22）
+Symbolab解锁订阅=type=http-response,pattern=^https?:\/\/scibug\.com\/appleSubscriptionValidate$,requires-body=1,script-path=https://raw.githubusercontent.com/28413761/QX/main/jiesuo/symbolab.js,script-update-interval=0,max-size=0
