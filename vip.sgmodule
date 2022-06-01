@@ -7,7 +7,7 @@ hostname = api.polaxiong.com,mb3admin.com,buy.itunes.apple.com,xluser-ssl.xunlei
 [Script]
 # > 解锁
 # 迅雷 解锁 SVIP
-迅雷 = type=http-response,pattern=https://xluser-ssl.xunlei.com/xluser.core.login/v3/getuserinfo,requires-body=1,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/xunlei.js,script-update-interval=0,max-size=0
+迅雷 = type=http-response,pattern=^https:\/\/xluser-ssl\.xunlei\.com\/xluser\.core\.login\/v3\/getuserinfo$,requires-body=1,script-path=https://raw.githubusercontent.com/jsj0622/Surge/main/xunlei.js,script-update-interval=0,max-size=0
 # ProKnockOut 解锁 Premium
 Premium = type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt,requires-body=1,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/proKnockOut.js,script-update-interval=0,max-size=0
 # Emby
