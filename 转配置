@@ -20,3 +20,5 @@ Surge(写在模块没无效，必须写在配置文件中)
 https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\d{5,10} data="https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/nicegram_body.js"
 [MITM]
 hostname = restore-access.indream,*.revenuecat.lakecoloring.com
+4.JS最后命令
+$done({body}); 变 $done({body}); 
