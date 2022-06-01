@@ -1,14 +1,19 @@
-#!name=VIP功能解锁(zyz-20220529)
+#!name=VIP功能解锁(zyz-20220601)
 #!desc=VIP功能解锁
 
 [MITM]
-hostname = api.polaxiong.com
+hostname = api.polaxiong.com,mb3admin.com,buy.itunes.apple.com,xluser-ssl.xunlei.com
 
 [Script]
-
 # > 解锁
+# 迅雷 解锁 SVIP
+迅雷 = type=http-response,pattern=https://xluser-ssl.xunlei.com/xluser.core.login/v3/getuserinfo,requires-body=1,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/xunlei.js,script-update-interval=0,max-size=0
+# ProKnockOut 解锁 Premium
+Premium = type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt,requires-body=1,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/proKnockOut.js,script-update-interval=0,max-size=0
+# Emby
+Emby = type=http-response,pattern=^https:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey),requires-body=1,script-path=https://raw.githubusercontent.com/zlking02/Emby/main/Script/embycrack.js,script-update-interval=0,max-size=0
 #解锁泼辣修图
-^https:\/\/api\.polaxiong\.com\/v1\/payments\/appleiap\/receipts\/confirmation requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Polarr.js
+^https:\/\/api\.polaxiong\.com\/v1\/payments\/appleiap\/receipts\/confirmation requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Polarr.js,script-update-interval=0,max-size=0
 # > 欲漫涩解锁V漫画
 欲漫涩解锁V漫画 = type=http-response,pattern=^https?:\/\/.*\.com\/api\/app\/user\/info$,requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/PornComicsCrack.js,script-update-interval=0,max-size=0
 # > 香蕉视频解锁部分观看限制
