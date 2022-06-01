@@ -610,7 +610,7 @@ https://api.rr.tv/storage/business/rootName/app/homePage\?dataType=JSON - reject
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/(new)?na\/m\/adInfo - reject
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/na\/m\/adInfo - reject
 ^https?:\/\/bdsp-x\.jd\.com\/adx\/ - reject
-^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=(start|queryMaterialAdverts) - reject
+#^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=(start|queryMaterialAdverts) - reject
 ^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
 #^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start - script-response-body https://raw.githubusercontent.com/28413761/QX/main/JS/startup.js
 #^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$ - reject-200
