@@ -1,14 +1,7 @@
 #!name=广告重写(zyz-20220601)
 #!desc=广告重写(zyz)
 
-# >  /*  APP开屏广告拦截，APP启动广告拦截
-# >  */
-#注意:url转-  京东删除api.m.jd 删重写和解锁
- 
 
-[MITM] 
-hostname = %APPEND% #!name=广告重写(zyz-20220529)
-#!desc=广告重写(zyz)
 
 # >  /*  APP开屏广告拦截，APP启动广告拦截
 # >  */
@@ -1147,7 +1140,7 @@ https://dl-cu-hz.lechange.cn/oms-online/advertisementPush/* - reject
 # > 三联中读
 https://apis.lifeweek.com.cn/api/baseConfig/getIosNewConfig - reject
 # > 山东移动
-https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome.do - reject-dict
+^https:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome\.do$ - reject
 # > 冠寓开屏广告
 https://guanyu.longfor.com/app-server/api/v1/main/start - reject
 # > 友邻优课
