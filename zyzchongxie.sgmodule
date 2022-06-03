@@ -615,7 +615,7 @@ https://api.rr.tv/storage/business/rootName/app/homePage\?dataType=JSON - reject
 ^https?:\/\/m\.360buyimg\.com\/mobilecms\/s640x1136_jfs\/ - reject-tinygif
 # > 京东极速版
 ^https:\/\/img11.360buyimg.com\/dl\/jfs\/t1\/195304\/29\/12317\/268480\/60e6fd21E02a8fb2a\/ - reject
-https://api.m.jd.com/client.action\?functionId=lite_advertising - reject
+#https://api.m.jd.com/client.action\?functionId=lite_advertising - reject
 # > 京东健康
 ^https?:\/\/m\.360buyimg\.com\/babel\/jfs\/t1\/180291\/5\/23800\/294871\/625f5da2E13ac0ba3\/230238c767c61b6d\.jpg - reject
 # > 京喜
