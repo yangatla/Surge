@@ -1,5 +1,5 @@
 修改大神文件 
-反馈的问题可以加群组  https://t.me/+zkzhdNEpMCM0YjFl
+反馈的问题可以加群组  https://t.me/jsj0622
 
 1.Sub-Store 配置指南
 https://github.com/Peng-YM/Sub-Store/tree/master/config
