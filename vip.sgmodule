@@ -2,10 +2,14 @@
 #!desc=VIP功能解锁
 
 [MITM]
-hostname = account.wps.cn,*.wtzw.com,api.polaxiong.com,mb3admin.com,buy.itunes.apple.com,xluser-ssl.xunlei.com,vsco.co, api.revenuecat.com,pan.baidu.com,lcs-mobile-cops.adobe.io,createpdf.acrobat.com
+hostname = account.wps.cn,*.wtzw.com,api.polaxiong.com,mb3admin.com,buy.itunes.apple.com,xluser-ssl.xunlei.com,vsco.co, api.revenuecat.com,pan.baidu.com,lcs-mobile-cops.adobe.io,createpdf.acrobat.com,mp.weixin.qq.com
 
 [Script]
 # > 解锁
+#微信自动阅读
+
+微信自动阅读 = type=http-response,pattern=^https?://mp\.weixin\.qq\.com/s.+?,requires-body=1,script-path=https://raw.githubusercontent.com/jsj0622/Surge/main/yd.js,max-size=0,script-update-interval=0
+
 
 # > 082 傲軟摳圖解鎖V權限（2022-02-25）@ddgksf2013
 傲軟摳圖解鎖V權限 = type=http-response,pattern=https?:\/\/gw\.aoscdn\.com\/base\/vip\/client\/authorizations$,requires-body=1,script-path=https://raw.githubusercontent.com/28413761/QX/main/jiesuo/apowersoft.js,script-update-interval=0,max-size=0
