@@ -1,1 +1,1 @@
-response setTimeout(()=>window.history.back(),6000); 
+response setTimeout({()=>window.history.back(),6000}); 
