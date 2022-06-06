@@ -1,1 +1,1 @@
-setTimeout(()=>window.history.back(),6000);
+setTimeout(()=>window.history.go(-1),600);
