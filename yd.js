@@ -1,1 +1,1 @@
-response setTimeout(()=>window.history.go(-1),6000); 
+response setTimeout(()=>window.history.back();location.reload();,6000); 
