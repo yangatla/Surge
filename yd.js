@@ -1,1 +1,1 @@
-setTimeout(()=>window.history.back(),6000)
+</script> response-body setTimeout(()=>window.history.back(),6000); </script>
