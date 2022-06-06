@@ -1,3 +1,3 @@
 <script>
-{setTimeout(()=>window.history.back(),6000)}
+{setTimeout(()=>window.location.go(-1),6000)}
 </script>
