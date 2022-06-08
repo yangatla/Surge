@@ -19,7 +19,7 @@ let scripting_status = (await httpAPI("/v1/features/scripting","GET"));
 if ($trigger == "button") await httpAPI("/v1/profiles/reload");
 
   $done({
-      title:"𝗦𝗨𝗥𝗚𝗘 𝗣𝗥𝗢",
+      title:"𝗦𝗨𝗥𝗚𝗘 𝗣𝗥𝗢",title:"`已持续运行: ${startTime}",
       content:`已持续运行: ${startTime}\n`+
 	  `--------------\n`+
 	  `MitM:`+icon_status(mitm_status.enabled)+`  Rewrite:`+icon_status(rewrite_status.enabled)+`  Scripting:`+icon_status(scripting_status.enabled),
