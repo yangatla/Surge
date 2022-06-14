@@ -4,7 +4,7 @@
 # >  /*  APP开屏广告拦截，APP启动广告拦截
 # > 同步更新
 #注意:url转-  京东删除api.m.jd 删重写和解锁
-# - reject - reject 转 - reject  
+# - reject - reject-200 转 - reject  
 # - reject-img 转 - reject-tinygif
 #删除谷歌和油管
 
