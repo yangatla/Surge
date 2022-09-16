@@ -190,7 +190,7 @@ Scanner = type=http-response,pattern=https://license.pdfexpert.com/api/2.0/scann
 # > 032 每日艺术 （2020-11-23） by ddgksf2013
 每日艺术 = type=http-response,pattern=https://panel.getdailyart.com/APIMobile/users/single url response-body account_type":"0 response-body account_type":"2
 # > 解锁 彩云天气/彩云天气Pro SV（跟苹果自带天气冲突，默认关闭）
-# > 彩云天气 = type=http-response,pattern=^https?:\/\/biz\.caiyunapp\.com\/v\d\/user,requires-body=1,script-path=https://raw.githubusercontent.com/28413761/QX/main/jiesuo/CaiYunWeather.js,script-update-interval=0,max-size=0
+彩云天气 = type=http-response,pattern=^https?:\/\/biz\.caiyunapp\.com\/v\d\/user,requires-body=1,script-path=https://raw.githubusercontent.com/28413761/QX/main/jiesuo/CaiYunWeather.js,script-update-interval=0,max-size=0
 # > 030 豌豆清单 (2020-11-12) by ddgksf2013
 豌豆清单 = type=http-response,pattern=^https:\/\/www\.40sishi\.com\/list\/user\/profile$,requires-body=1,script-path=https://raw.githubusercontent.com/28413761/QX/main/jiesuo/wdqd.js,script-update-interval=0,max-size=0
 # > 029 Quicut (2020-11-12) by ddgksf2013
